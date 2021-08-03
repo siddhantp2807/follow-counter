@@ -1,0 +1,4 @@
+:schedule:
+  scrape_site_job:
+    every: ['4 hours', first_in: '10s']
+    class: CheckFollowsJob
