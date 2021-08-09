@@ -2,6 +2,7 @@ class IgUser < ApplicationRecord
     has_many :ig_records, class_name: "Record", foreign_key: 'ig_id'
     has_many :follow_records, class_name: "Record", foreign_key: 'follow_id'
     has_many :notifications
+    has_one :user
 
     def self.add_many(arr)
 
